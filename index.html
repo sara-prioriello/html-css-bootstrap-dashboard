@@ -9,35 +9,37 @@
 </head>
 <body>
     
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="./img/duck.png" alt="Logo" width="40" class="d-inline-block align-text-top">
-     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-       <a class="navbar-brand" href="#">
-      Catalogo libri</a>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Anagrafica utenti</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">Storico prestiti</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Help</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search"/>
-        <button class="btn btn-outline-light" type="submit">Cerca</button>
-      </form>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./img/duck.png" alt="Logo" width="40" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <a class="navbar-brand" href="#">
+        Catalogo libri</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Anagrafica utenti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Storico prestiti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search"/>
+          <button class="btn btn-outline-light" type="submit">Cerca</button>
+        </form>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
 
 <main>
@@ -49,7 +51,10 @@
             <div class="container-fluid">
               <a class="navbar-brand">Catalogo libri</a>
               <form class="d-flex" role="search">
-                <button class="btn btn-primary" type="submit">Aggiungi libri</button>
+                
+                <a href="./add-new-book.html">
+                  <button class="btn btn-primary" type="submit">Aggiungi libri</button>
+                </a>
               </form>
             </div>
           </nav>
@@ -57,8 +62,8 @@
           <table class="table table-striped text-start">
           <thead>
             <tr>
-              <th scope="col">Titolo</th>
-              <th class="d-none d-md-block" scope="col">Data prestito</th>
+              <th class="w-50" scope="col">Titolo</th>
+              <th class="d-none d-md-table-cell" scope="col">Data prestito</th>
               <th scope="col">Stato</th>
               <th scope="col">Azioni</th>
             </tr>
@@ -66,7 +71,7 @@
         <tbody>
           <tr>
             <td class="fw-light">I pilastri della terra</td>
-            <td class="d-none d-md-block fw-light">-</td>
+            <td class="d-none d-md-table-cell">-</td>
             <td><span class="badge text-bg-success">Disponibile</span></td>
             <td>
               <button><i class="bi bi-pencil-fill"></i></button>
@@ -74,16 +79,22 @@
             </td>
           </tr>
           <tr>
-            <td>Mark</td>
-            <td class="d-none d-md-block">Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td class="fw-light">I promessi sposi</td>
+            <td class="d-none d-md-table-cell fw-light">-</td>
+            <td><span class="badge text-bg-success">Disponibile</span></td>
+            <td>
+              <button><i class="bi bi-pencil-fill"></i></button>
+              <button><i class="bi bi-trash3-fill"></i></button>
+            </td>
           </tr>
           <tr>
-            <td>Mark</td>
-            <td class="d-none d-md-block">John</td>
-            <td>Doe</td>
-            <td>@social</td>
+            <td class="fw-light">Il signore degli anelli</td>
+            <td class="d-none d-md-table-cell fw-light">18/03/2023</td>
+            <td><span class="badge text-bg-warning text-white">In prestito</span></td>
+            <td>
+              <button><i class="bi bi-pencil-fill"></i></button>
+              <button><i class="bi bi-trash3-fill"></i></button>
+            </td>
           </tr>
         </tbody>
       </table>
