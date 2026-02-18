@@ -11,7 +11,7 @@
     <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="./index.html">
         <img src="./img/duck.png" alt="Logo" width="40" class="d-inline-block align-text-top">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,53 +45,58 @@
 <main>
     
         <div class="container">
+            <div>
+                <h1>Nuovo Libro</h1>
+            </div>
             <form class="row g-3">
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Nome autore</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Inserisci il nome dell'autore">
-            </div>
-            <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Cognome autore</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Inserisci il cognome dell'autore">
-                
-            </div>
-            <div class="col-12">
-                <label for="inputAddress" class="form-label">Titolo</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Inserisci il titolo del libro">
-                <div class="">Inserisci il titolo della versione italiana</div>
-            </div>
-                <div class="col-md-4">
-                <label for="inputState" class="form-label">Genere</label>
-                <select id="inputState" class="form-select">
-                <option selected>Scegli il genere</option>
-                <option>...</option>
-                </select>
-            </div>
-            <div class="col-12">
-                <label for="inputAddress2" class="form-label">Anno di pubblicazione</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Inserisci l'anno">
-            </div>
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label">#ISBN</label>
-                <input type="text" class="form-control" id="inputCity" placeholder="Inserisci il codice #ISBN">
-            </div>
-
-            <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                    Check me out
-                </label>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Nome autore</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Inserisci il nome dell'autore">
                 </div>
-            </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-            </div>
-        </form>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Cognome autore</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Inserisci il cognome dell'autore">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Inserisci il titolo del libro">
+                    <p class="fw-lighter fs-6">Titolo della versione italiana</p>
+                </div>
+                
+                    <div class="col-md-4 pb-4">
+                        <label for="inputState" class="form-label">Genere</label>
+                        <select id="inputState" class="form-select">
+                        <option selected>Scegli il genere</option>
+                        <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 pb-4">
+                        <label for="inputCity" class="form-label">Anno di pubblicazione</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="Inserisci l'anno">
+                    </div>
+                    <div class="col-md-4 pb-4">
+                        <label for="inputZip" class="form-label">ISBN#</label>
+                        <input type="text" class="form-control" id="inputZip" placeholder="Inserisci il codice ISBN#">
+                    </div>
+                
+
+                <div class="col-12 mt-4 pt-4 border-top">
+                    <label for="inputAddress2" class="form-label">Note</label>
+                    <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" id="floatingTextarea" rows="5"></textarea>
+                             
+                 </div>
+                <div class="col-12">
+                    <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Disponibile anche in digitale
+                    </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Aggiungi libro</button>
+                </div>
+            </form>
         </div>
    
     
